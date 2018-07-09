@@ -1,9 +1,7 @@
 # FriendLy
 
-## [View Demo]()
-## [View JS Code]()
-
-- - -
+[View Demo](https://usheninte.github.io/FriendLy/index.html)     
+[View JS Code](https://github.com/Usheninte/FriendLy/blob/master/FriendLy.js)     
 
 ### Resources used
 

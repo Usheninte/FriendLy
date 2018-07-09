@@ -1,3 +1,5 @@
+//Github Pages LINK === https://usheninte.github.io/FriendLy/index.html 
+
 //FriendLy Complex Component
 function FriendLy() {
   var friendlyStyle = {
