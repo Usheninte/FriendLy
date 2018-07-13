@@ -12,9 +12,9 @@
 
 ## Stage 3
 
-[View Demo 2](https://usheninte.github.io/FriendLy/index2.html)     
-[View JS Code 2](https://github.com/Usheninte/FriendLy/blob/master/FriendLy2.js)     
-_Entirely new dummy users were utilised at this stage_
+_Entirely new dummy users were utilised at this stage_     
+[View Demo 3](https://usheninte.github.io/FriendLy/index3.html)     
+[View JS Code 3](https://github.com/Usheninte/FriendLy/blob/master/FriendLy3.js)     
 
 ### Resources used
 
