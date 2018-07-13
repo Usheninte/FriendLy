@@ -44,7 +44,7 @@
     function FriendLy(props) {
       //femaleUsers
       var femaleUsers = props.people.filter(function(female) {
-        return female.gender == 'female';
+        return female.gender === 'female';
       })
       .map(function(female) {
         var friendlyStyle = {
@@ -66,6 +66,28 @@
         );
       });
       //maleUsers
+      var maleUsers = props.people.filter(function(male) {
+        return male.gender === 'male';
+      })
+      .map(function(male) {
+        var friendlyStyle = {
+          display: "inline-block",
+          margin: 20,
+          height: 300,
+          width: 200,
+          padding: 0,
+          backgroundColor: "#fff",
+          WebkitFilter: "drop-shadow(0px 0px 5px #555)",
+          filter: "drop-shadow(0px 0px 5px #555)"
+        }
+        return(
+          <div key={male.id} style={friendlyStyle}>
+            <Avatar img={male.img} />
+            <UserName name={male.name} />
+            <GetConnected />
+          </div>
+        );
+      });
       return(
         <div>
           <h1>FriendLy</h1>
@@ -74,6 +96,10 @@
                 {femaleUsers}
               </div>
             <hr />
+            <h4>Male Users</h4>
+              <div>
+                {maleUsers}
+              </div>
         </div>
       );
     }
