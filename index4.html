@@ -39,9 +39,14 @@
         </div>
       );
     } */
-
+    
+    //use the map() method to pass props from people to the FriendLy component
     function FriendLy(props) {
-      var FriendLyBlock = props.people.map(function(peeps) {
+      //femaleUsers
+      var femaleUsers = props.people.filter(function(female) {
+        return female.gender == 'female';
+      })
+      .map(function(female) {
         var friendlyStyle = {
           display: "inline-block",
           margin: 20,
@@ -53,19 +58,28 @@
           filter: "drop-shadow(0px 0px 5px #555)"
         }
         return(
-          <div key={peeps.name} style={friendlyStyle}>
-            <Avatar img={peeps.img} />
-            <UserName name={peeps.name} />
+          <div key={female.id} style={friendlyStyle}>
+            <Avatar img={female.img} />
+            <UserName name={female.name} />
             <GetConnected />
           </div>
         );
-      })
+      });
+      //maleUsers
       return(
-        <div>{FriendLyBlock}</div>
+        <div>
+          <h1>FriendLy</h1>
+            <h4>Female Users</h4>
+              <div>
+                {femaleUsers}
+              </div>
+            <hr />
+        </div>
       );
     }
-
-    //use the map() method to pass props from people to the FriendLy component
+    
+    //create a variable that uses the filter() method to select all male users and displays them in JSX with the map() method
+    //create a variable that uses the filter() method to select all female users and displays them in JSX with the map() method
 
     //Avatar Component
     function Avatar(props) {
@@ -136,15 +150,13 @@
 
     //CHALLENGE - pass people array to the FriendLy component
 
-    var people = [{id: 0, name: "Rob", gender: "male", img: "https://pbs.twimg.com/profile_images/699422966556168193/zUm4vhAo.jpg"},
+    var people = [{id: 0, name: "Usheninte", gender: "male", img: "https://pbs.twimg.com/profile_images/1016166221102927874/aIBWy-J9_400x400.jpg"},
                 {id: 1, name: "Charles", gender: "male", img:"https://static.pexels.com/photos/38630/bodybuilder-weight-training-stress-38630.jpeg"},
                 {id: 2,  name: "Natalie", gender: "female", img: "https://static.pexels.com/photos/509195/pexels-photo-509195.jpeg"},
-                {id: 3, name: "Jenny", gender: "female", img: "https://static.pexels.com/photos/517061/pexels-photo-517061.jpeg"},
-                {id: 4, name: "Sarah", gender: "female", img: "https://static.pexels.com/photos/324658/pexels-photo-324658.jpeg"},
-                {id: 5, name: "Josh", gender: "male", img: "https://static.pexels.com/photos/428339/pexels-photo-428339.jpeg"},
-                {id: 6, name: "Kenny", gender: "male", img: "https://static.pexels.com/photos/325682/pexels-photo-325682.jpeg"},
-                {id: 7, name: "John", gender: "male", img: "https://static.pexels.com/photos/45882/man-crazy-funny-dude-45882.jpeg"},
-                {id: 8, name: "Alisha", gender: "female", img: "https://static.pexels.com/photos/38554/girl-people-landscape-sun-38554.jpeg"}
+                {id: 3, name: "Sarah", gender: "female", img: "https://static.pexels.com/photos/324658/pexels-photo-324658.jpeg"},
+                {id: 4, name: "Kenny", gender: "male", img: "https://static.pexels.com/photos/325682/pexels-photo-325682.jpeg"},
+                {id: 5, name: "John", gender: "male", img: "https://static.pexels.com/photos/45882/man-crazy-funny-dude-45882.jpeg"},
+                {id: 6, name: "Alisha", gender: "female", img: "https://static.pexels.com/photos/38554/girl-people-landscape-sun-38554.jpeg"}
                 ];
 
     ReactDOM.render(

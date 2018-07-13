@@ -10,11 +10,17 @@
 [View Demo 2](https://usheninte.github.io/FriendLy/index2.html)     
 [View JS Code 2](https://github.com/Usheninte/FriendLy/blob/master/FriendLy2.js)     
 
+_Entirely new dummy users utilised in the following stages_     
+
 ## Stage 3
 
-_Entirely new dummy users were utilised at this stage_     
 [View Demo 3](https://usheninte.github.io/FriendLy/index3.html)     
 [View JS Code 3](https://github.com/Usheninte/FriendLy/blob/master/FriendLy3.js)     
+
+## Stage 4
+
+[View Demo 4](https://usheninte.github.io/FriendLy/index4.html)     
+[View JS Code 4](https://github.com/Usheninte/FriendLy/blob/master/FriendLy4.js)     
 
 ### Resources used
 
