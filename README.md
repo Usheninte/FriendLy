@@ -10,6 +10,12 @@
 [View Demo 2](https://usheninte.github.io/FriendLy/index2.html)     
 [View JS Code 2](https://github.com/Usheninte/FriendLy/blob/master/FriendLy2.js)     
 
+## Stage 3
+
+[View Demo 2](https://usheninte.github.io/FriendLy/index2.html)     
+[View JS Code 2](https://github.com/Usheninte/FriendLy/blob/master/FriendLy2.js)     
+_Entirely new dummy users were utilised at this stage_
+
 ### Resources used
 
 > React     
