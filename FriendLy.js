@@ -83,6 +83,10 @@ function FriendLy() {
     }
 
 ReactDOM.render(
-  <FriendLy />,
+  <div>
+    <FriendLy />
+    <br /><br /><br />
+    <h3><a href="https://github.com/Usheninte/FriendLy">View on Github</a></h3>
+  </div>,
   document.getElementById("app")
 )
