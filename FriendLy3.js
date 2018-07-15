@@ -107,8 +107,12 @@ var people = [{name: "Usheninte", img: "https://pbs.twimg.com/profile_images/101
               ];
 
 ReactDOM.render(
-  <FriendLy 
-    people={people}
-    />,
+  <div>
+    <FriendLy 
+      people={people}
+      />
+    <br /><br /><br />
+    <h3><a href="https://github.com/Usheninte/FriendLy">View on Github</a></h3>
+  </div>,
   document.getElementById("app")
 )
